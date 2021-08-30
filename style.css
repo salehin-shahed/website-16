@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Default Css */
+
+.container {
+    width: 1400px;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-start {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: right;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Header Section */
+
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    width: 85px;
+    padding: 10px 0 0px 0;
+}
+
+.menu {
+    width: 70%;
+}
+
+.menu ul {
+    text-align: right;
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: -5px;
+}
+
+.menu ul li a {
+    display: block;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #000;
+    line-height: 50px;
+}
+
+
+/* Banner Section */
+
+.banner {
+    background: url(images/banner.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 315px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.banner-text {
+    color: #fff;
+}
+
+.banner-text p {
+    font-size: 25px;
+}
+
+.banner-text h1 {
+    font-size: 60px;
+    padding: 30px 0;
+}
+
+.banner-button a {
+    background: #fff;
+    color: #7d7d7c;
+    text-decoration: none;
+    display: inline-block;
+    padding: 18px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px;
+    transition: .4s;
+}
+
+.banner-button a:hover {
+    background: #dea23c;
+    color: #fff;
+}
+
+
+/* Pricing Section */
+
+.pricing {
+    background: #f7f7f7;
+    padding: 60px 0;
+}
+
+.pricing-title h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.pricing-title p {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 25px 0 80px 0;
+}
+
+.pricing-table {
+    margin-left: 15%;
+}
+
+.p-table {
+    background: #fff;
+    width: 27%;
+    margin-right: 2%;
+
+}
+
+
+/* Start Table Hover */
+
+.p-table:hover .p-table-text {
+    background: #f0952a;
+    color: #fff;
+    transition: .4s;
+}
+
+.p-table:hover .p-table-text h1 {
+    background: transparent;
+    color: #fff;
+    transition: .4s;
+}
+
+.p-table:hover .p-table-text h5 {
+    color: #fff;
+    transition: .4s;
+}
+
+.p-table:hover .p-table-button a {
+    background: #f0952a;
+    color: #fff;
+    transition: .4s;
+}
+
+/* =====Table Hover End========= */
+
+
+.p-table:nth-child(3) {
+    margin-right: 0;
+}
+
+.p-table-text {
+    padding: 20px;
+}
+
+.p-table-text h3 {
+    font-weight: 500;
+}
+
+.p-table-text h1 {
+    padding: 0 10px;
+    margin: 30px 0;
+    font-size: 40px;
+    background: #f5f5f5;
+}
+
+.p-table-text h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.p-table-text h5 {
+    padding: 15px 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #00000087;
+}
+
+.p-table-text span {
+    font-size: 15px;
+}
+
+.p-table-list span {
+    color: #e79230;
+    font-size: 25px;
+    margin: 0 15px;
+}
+
+.p-table-list ul {
+    list-style: none;
+    border-top: 1px solid #ddd;
+    padding: 50px 20px;
+}
+
+.p-table-list ul li {
+    font-size: 18px;
+    color: #7d7d7d;
+    padding: 18px 0;
+}
+
+.p-table-button {
+    margin-bottom: 30px;
+}
+
+.p-table-button a {
+    display: inline-block;
+    box-shadow: 0 0 12px 0 #6278df73;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #7a7f84;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/* Team Section */
+
+.team-title {
+    padding: 100px 0;
+}
+
+.team-title h2 {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.t-photo {
+    width: 23%;
+    border: 7px double #e79230;
+    box-sizing: border-box;
+    margin-right: 2%;
+    box-shadow: 3px 3px 5px 0 #6278df73;
+}
+
+.t-text {
+    padding: 25px;
+}
+
+.t-text h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.t-text p {
+    color: #9e9e9e;
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+
+/* Newsletter Section */
+
+.newsletter {
+    margin-top: 80px;
+    background: #f5f5f5;
+    padding: 70px 0;
+}
+
+.newsletter-text h2 {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 50px 0px;
+}
+
+.newsletter-email {
+    width: 30%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    border: 2px solid #9caa2cb5;
+    outline: none;
+    border-radius: 10px;
+}
+
+.newsletter-email:focus {
+    border: 2px solid #34be6eab;
+    box-shadow: 0 1px 20px 0 #6278df73;
+    transition: .4s;
+}
+
+.newsletter-button a {
+    display: inline-block;
+    text-decoration: none;
+    background: rgb(170, 151, 44);
+    color: rgb(255, 255, 255);
+    padding: 20px 80px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #ab982c;
+}
+
+.newsletter-button a:hover {
+    background: #fff;
+    color: #ca9b69;
+    box-shadow: 0 1px 15px 0 #6278df73;
+    transition: .4s;
+}
+
+
+/* Description Section */
+
+.description-title h2 {
+    font-size: 45px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.d-photo {
+    width: 40%;
+}
+
+.d-photo img {
+    width: 480px;
+    margin-left: 20%;
+}
+
+.d-text {
+    width: 56%;
+    text-align: left;
+    padding: 0 90px 0 0;
+    box-sizing: border-box;
+}
+
+.d-text h3 {
+    line-height: 3em;
+}
+
+.d-text p {
+    line-height: 2em;
+}
+
+
+/* User Section */
+
+.user {
+    background: #f5f5f5;
+    padding-bottom: 70px;
+}
+
+.user-title p {
+    padding: 80px 0 40px 0;
+    color: #7d7d7d;
+    font-weight: 500;
+}
+
+.user-title h1 {
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 90px;
+}
+
+.user-description {
+    width: 28%;
+    border: 2px solid #c5c5c5;
+    margin-left: 2%;
+}
+
+.user-description:first-child {
+    margin-left: 6%;
+}
+
+.user-description p {
+    background: #fff;
+    color: #7d7d7d;
+    padding: 35px 45px 34px 40px;
+    line-height: 2em;
+    font-size: 19px;
+    box-shadow: 0 2px 5px 0 #6278df73;
+    font-weight: 400;
+    position: relative;
+}
+
+.user-description p::before {
+    content: "\f10d";
+    font-family: fontAwesome;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 70px;
+    opacity: .1;
+}
+
+.user-description p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    left: 170px;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.identity {
+    padding: 35px 0 20px 70px;
+}
+
+.user-photo img {
+    width: 70px;
+    border: 7px solid #ab982c;
+    margin-right: 20px;
+}
+
+.user-identity h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+
+.user-identity span {
+    color: #7d7d7d;
+    font-weight: 500;
+}
+
+
+/* Contact Section */
+
+.contact-us {
+    padding: 80px 0 60px 0;
+}
+
+.contact-title h3 {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.contact-title p {
+    color: #808080;
+    font-size: 19px;
+    padding: 20px 350px 50px;
+    line-height: 33px;
+}
+
+.contact {
+    padding: 20px;
+    border: 1px solid #ab982c;
+    border-radius: 10px;
+    outline: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.contact:focus {
+    border: 1px solid #34be6eab;
+    box-shadow: 0 1px 15px 0 #6278df73;
+    transition: .4s;
+}
+
+.contact-email {
+    width: 50%;
+}
+
+.contact-name {
+    width: 23%;
+    margin: 1% 5px;
+}
+
+.contact-tel {
+    width: 23%;
+    margin: 5px;
+}
+
+.contact-msg {
+    width: 50%;
+    height: 170px;
+}
+
+.contact-button a {
+    display: inline-block;
+    background: #ab982c;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 70px;
+    margin-top: 1%;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid #ab982c;
+}
+
+.contact-button a:hover {
+    background: #fff;
+    color: #ca9b69;
+    box-shadow: 0 1px 15px 0 #6278df73;
+    transition: .4s;
+}
+
+/* Footer Section */
+
+.footer {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
